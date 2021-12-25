@@ -1,8 +1,13 @@
 import * as React from 'react';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 
+// Importing components to app
+import Nav from './components/Nav';
+
 // Importing pages to app
 import Home from './pages/Home';
+import Signup from './pages/Signup';
+import Login from './pages/Login';
 
 const theme = createTheme({
   palette: {
@@ -44,7 +49,10 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <div>
-        <Home></Home>
+        <Nav />
+        <Home />
+        <Login />
+        <Signup />
       </div>
     </ThemeProvider>
   );
