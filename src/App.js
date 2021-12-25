@@ -1,24 +1,52 @@
-import logo from './logo.svg';
-import './App.css';
+import * as React from 'react';
+import { ThemeProvider, createTheme } from '@mui/material/styles';
+
+// Importing pages to app
+import Home from './pages/Home';
+
+const theme = createTheme({
+  palette: {
+    type: 'light',
+    primary: {
+      main: '#E5989B',
+    },
+    secondary: {
+      main: '#B5838D',
+    },
+    success: {
+      main: '#FFCDB2',
+    },
+    info: {
+      main: '#4d7298',
+    },
+  }
+});
+
+const darkTheme = createTheme({
+  palette: {
+    type: 'dark',
+    primary: {
+      main: '#E5989B',
+    },
+    secondary: {
+      main: '#B5838D',
+    },
+    success: {
+      main: '#FFCDB2',
+    },
+    info: {
+      main: '#4d7298',
+    },
+  }
+})
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={theme}>
+      <div>
+        <Home></Home>
+      </div>
+    </ThemeProvider>
   );
 }
 
