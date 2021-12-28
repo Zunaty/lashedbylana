@@ -73,7 +73,7 @@ const darkTheme = createTheme({
             main: '#4d7298',
         },
     }
-})
+});
 
 function App() {
     return (
@@ -98,6 +98,6 @@ function App() {
             </ThemeProvider>
         </ApolloProvider>
     );
-}
+};
 
 export default App;
