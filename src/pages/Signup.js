@@ -1,5 +1,18 @@
 import * as React from 'react';
-import { Avatar, Button, CssBaseline, TextField, Link, Grid, Box, Typography, Container } from '@mui/material';
+
+// MUI Material Components
+import { 
+    Avatar, 
+    Button, 
+    CssBaseline, 
+    TextField, 
+    Link, 
+    Grid, 
+    Box, 
+    Typography, 
+    Container 
+} from '@mui/material';
+
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 
 function Copyright(props) {

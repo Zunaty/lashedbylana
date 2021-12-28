@@ -1,10 +1,16 @@
 import React from 'react';
 
+// MUI Material Components
+import { 
+    Container, 
+    CssBaseline
+} from '@mui/material';
+
 const Home = () => {
     return (
-        <div>
-            <p>Hello</p>
-        </div>
+        <Container component="main" maxWidth="xs">
+            <CssBaseline />
+        </Container>
     );
 };
 

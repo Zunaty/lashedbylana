@@ -1,4 +1,6 @@
 import * as React from 'react';
+
+// MUI Material Components
 import { 
     Avatar, 
     Button, 
@@ -26,7 +28,7 @@ function Copyright(props) {
             {'.'}
         </Typography>
     );
-}
+};
 
 export default function Login() {
     const handleSubmit = (event) => {
