@@ -9,11 +9,14 @@ import { ThemeProvider, createTheme } from '@mui/material/styles';
 
 // Importing components to app
 import Nav from './components/Nav';
+import Footer from './components/Footer';
 
 // Importing pages to app
 import Home from './pages/Home';
 import Signup from './pages/Signup';
 import Login from './pages/Login';
+import About from './pages/AboutMe';
+import Price from './pages/Pricing';
 import NoMatch from './pages/NoMatch';
 
 const httpLink = createHttpLink({
@@ -88,12 +91,14 @@ function App() {
                         <Route path="/" element={<Home />} />
                         <Route path="/signup" element={<Signup />} />
                         <Route path="/login" element={<Login />} />
+                        <Route path="/about" element={<About />} />
+                        <Route path="/price" element={<Price />} />
                         <Route element={<NoMatch />} />
                     </Routes>
                 </main>
 
                 <footer>
-
+                    <Footer />
                 </footer>
             </ThemeProvider>
         </ApolloProvider>
